@@ -31,7 +31,7 @@ const Banner = ({ slides }) => {
         </div>
       </div>
 
-      {/* Dots Below the Carousel (Immediately below with no extra space) */}
+      {/* Dots Below the Carousel */}
       <div className="flex justify-center gap-6 pt-[10px]">
         {slides.map((_, index) => (
           <div

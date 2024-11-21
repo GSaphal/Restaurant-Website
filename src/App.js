@@ -1,4 +1,5 @@
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Router components
+
 import Banner from "./Components/Banner";
 import Navbar from "./Components/Navbar";
 import Menu from "./Components/Menu";
@@ -7,36 +8,24 @@ import Notice from "./Components/Notice";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import CompanyInformation from "./Pages/CompanyInformation";
-// import Lunch from "./Pages/Lunch";
+import Lunch from "./Pages/Lunch";
 import Takeout from "./Pages/Takeout";
 import Drink from "./Pages/Drink";
 // import { BrowserRouter as Router, Route ,Switch } from "react-router-dom";
-
+// import { createBrowserRouter,RouterProvider } from "react-router-dom";
+// import Dinner from "./Pages/Dinner";
 // import DinnerMenu from "./Components/DinnerMenu";
-
-
-
 
 function App() {
 
-  let slides=[
+  let slides = [
     <img src="images/food2.png" alt="food2" />,
     <img src="images/food3.jpg" alt="food3" />
-    
-    
   ];
+
   const menuItems = [
-    "home",
-    "Lunch menu",
-    "Dinner menu",
-    "Drink menu",
-    "Banquet/course menu",
-    "Takeout menu",
-    "Delivery menu",
-    "List of news",
-    "Frequently Asked Questions",
-    "Contact",
-    "Company information"
+    "home", "Lunch menu", "Dinner menu", "Drink menu", "Banquet/course menu",
+    "Takeout menu", "Delivery menu", "List of news", "Frequently Asked Questions", "Contact", "Company information"
   ];
 
   const menuCards = [
@@ -70,37 +59,38 @@ function App() {
   ];
 
   return (
-    
-    <div className="App">
-     <Navbar  menuItems={menuItems}/>
+    <Router> 
+      <div className="App">
+        <Navbar menuItems={menuItems} />
 
-     <div className="w-[1290px] m-auto pt-5">
-      
-       <Banner  slides={slides}/>
-       <Menu menuCards={menuCards}/>
-     <StoreInfo storeInfo={storeInfo} />
-     <Notice/>
-     <Contact/>
-     
-     </div>
+        <div className="w-[1290px] m-auto pt-5">
+          <Routes> 
+            <Route path="/" element={ /* Homepage Route */ 
+              <>
+                <Banner slides={slides} />
+                <Menu menuCards={menuCards} />
+                <StoreInfo storeInfo={storeInfo} />
+                <Notice />
+                <Contact />
+              </>
+            } />
+            {/* Other routes */}
+            <Route path="/takeout" element={<Takeout />} />
+            <Route path="/drink" element={<Drink />} />
+           
+            <Route path="/company-information" element={<CompanyInformation/>}/> 
+             <Route path="/lunch" element={<Lunch />} />
+          </Routes>
+        </div>
 
-     <div>
-      <Footer 
-        column1Links={column1Links} 
-        column2Links={column2Links} 
-        companyInfo={companyInfo}
-      />
-     </div>
-      <CompanyInformation/>
-      {/* <DinnerMenu/> */}
-      {/* <Lunch/> */}
-      <Takeout/>
-      <Drink/>
-    
+        <Footer 
+          column1Links={column1Links} 
+          column2Links={column2Links} 
+          companyInfo={companyInfo} 
+        />
       </div>
-
-    
-  ); 
+    </Router>
+  );
 }
 
 export default App;
