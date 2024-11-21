@@ -1,0 +1,7 @@
+/* Container.css */
+.container {
+    max-width: 1200px; /* Adjust based on your design */
+    margin: 0 auto; /* Centers the content */
+    padding: 0 20px; /* Adds left and right padding */
+  }
+  
