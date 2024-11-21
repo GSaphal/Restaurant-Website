@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
+import { useNavigate } from "react-router-dom"; 
 
 const Navbar = ({ menuItems }) => {
   const [toggle, setToggle] = useState(false);
   const [search, setSearch] = useState("");
+  const navigate = useNavigate(); 
 
   const handleSearchChange = (e) => {
     setSearch(e.target.value);
@@ -12,6 +14,10 @@ const Navbar = ({ menuItems }) => {
 
   const toggleMenu = () => {
     setToggle(!toggle); // Toggle between true (open) and false (close)
+  };
+
+  const handleLogoClick = () => {
+    navigate("/"); 
   };
 
   return (
@@ -30,7 +36,7 @@ const Navbar = ({ menuItems }) => {
               key={index}
               className="text-white mx-5 mt-2 mb-[15px] text-[15px] font-normal cursor-pointer"
             >
-              {item }
+              {item}
             </div>
           ))}
         </div>
@@ -53,12 +59,11 @@ const Navbar = ({ menuItems }) => {
       {/* Header Section */}
       <header className="p-[20px]">
         <div className="max-w-[1290px] mx-auto ml-[100px] flex items-center">
-          <div className="w-[320px] cursor-pointer">
+          <div className="w-[320px] cursor-pointer" onClick={handleLogoClick}> {/* Add onClick to logo */}
             <img
               src="images/logo.jpg"
               alt="logo"
               className="w-full"
-              
             />
           </div>
           <div
@@ -66,7 +71,7 @@ const Navbar = ({ menuItems }) => {
             onClick={toggleMenu}
           >
             {/* icon changing based on the toggle state */}
-            {toggle ? <RxCross1 className="text-4xl" />: <IoMenuOutline className="text-4xl" />}
+            {toggle ? <RxCross1 className="text-4xl" /> : <IoMenuOutline className="text-4xl" />}
             <span className="text-[11px] -mt-2">
               Menu
             </span>
