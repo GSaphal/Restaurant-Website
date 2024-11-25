@@ -17,7 +17,7 @@ const Lunch = () => {
     };
 
     return (
-        <div className="w-[1290px] m-auto pt-5">
+        <div className="w-[1280px] w-full mx-auto pt-5">
             {/* Grid of lunch item names */}
             <div className="mb-[20px] text-[30px] font-bold p-4">Lunch menu</div>
             <div className="grid grid-cols-4 gap-7 mb-[50px]">

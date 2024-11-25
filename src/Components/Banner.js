@@ -4,27 +4,26 @@ const Banner = ({ slides }) => {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    // Set interval to change the slide every 3 seconds
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length); // Cycle through slides
-    }, 3000); // Change slide every 3 seconds
+    }, 5000); // Change slide every 5 seconds
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(interval);
   }, [slides.length]);
 
   return (
-    <div className="w-[1290px]">
+    <>
       {/* Carousel */}
-      <div className="relative overflow-hidden w-full h-[400px]">
+      <div className="relative overflow-hidden w-[1280px] w-full mx-auto h-auto">
         <div
-          className="flex transition-transform duration-500 ease-out"
+          className="flex transition-transform duration-1000 will-change-transform ease-out"
           style={{
             transform: `translateX(-${current * 100}%)`, // Slide transition
           }}
         >
           {slides.map((s, index) => (
-            <div key={index} className="flex-shrink-0 w-[1290px]">
+            <div key={index} className="flex-shrink-0 w-full">
               {s}
             </div>
           ))}
@@ -43,7 +42,7 @@ const Banner = ({ slides }) => {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

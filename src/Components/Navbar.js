@@ -57,20 +57,21 @@ const Navbar = ({ menuItems }) => {
       </div>
 
       {/* Header Section */}
-      <header className="p-[20px]">
-        <div className="max-w-[1290px] mx-auto ml-[100px] flex items-center">
-          <div className="w-[320px] cursor-pointer" onClick={handleLogoClick}> {/* Add onClick to logo */}
+      <header className="py-[20px]">
+        <div className=" px-10 sm:px-2 md:px-20 lg:px-28 w-full flex  m-auto items-center justify-between">
+          <div className="w-[160px] sm:w-[320px] cursor-pointer " onClick={handleLogoClick}> {/* Add onClick to logo */}
             <img
               src="images/logo.jpg"
               alt="logo"
               className="w-full"
             />
           </div>
+          {/* Right side of Header Section */}
           <div
-            className="ml-auto mt-4 flex flex-col items-center cursor-pointer"
-            onClick={toggleMenu}
+            className="mr-3.5 mt-2 flex flex-col items-center cursor-pointer "
+            onClick={toggleMenu} 
           >
-            {/* icon changing based on the toggle state */}
+            {/* icon change based on the toggle state */}
             {toggle ? <RxCross1 className="text-4xl" /> : <IoMenuOutline className="text-4xl" />}
             <span className="text-[11px] -mt-2">
               Menu

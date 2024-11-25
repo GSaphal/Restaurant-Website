@@ -35,7 +35,7 @@ const TakeOut = () => {
                 {takeOutMenu.map((takeOutItem, index) => (
                     <div
                         key={index}
-                        ref={(el) => (sectionRefs.current[index] = el)} // Assign ref to each section
+                        ref={(el) => (sectionRefs.current[index] = el)} // Assigning ref to each section
                         className="mb-12 mt-[10px]"
                     >
                         {/*  item name */}

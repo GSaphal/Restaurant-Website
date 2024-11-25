@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className="w-[1290px] pt-[40px]">
+    <div className="w-[1280px] w-full mx-auto pt-[40px]">
       {/* Store title */}
       <div className="font-bold text-gray-700 text-[20px] mb-[10px]">SNS at the North Exit store in Haven</div>
       

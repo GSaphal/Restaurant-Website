@@ -2,7 +2,7 @@ import React from 'react';
 
 const StoreInfo = ({ storeInfo }) => {
   return (
-    <div className="w-[1290px] pt-[40px]">
+    <div className="w-full mx-auto w-[1280px] pt-[40px]">
       {/* Store title */}
       <div className="font-bold text-gray-700 text-[20px] mb-[10px]">Store Information</div>
       
@@ -10,7 +10,7 @@ const StoreInfo = ({ storeInfo }) => {
       <div className="h-[1px] bg-gray-300 mb-4"></div>
       
       {/* Render images in a grid */}
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {storeInfo.map((info, i) => (
           <div key={i}>
             {/* Display card image */}

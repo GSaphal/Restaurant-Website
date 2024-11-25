@@ -120,7 +120,7 @@ const Drink = () => {
   };
 
   return (
-    <div className="w-[1290px] m-auto pt-5">
+    <div className="w-[1280px] w-full mx-auto pt-5">
       {/* Title */}
       <div className="mb-[20px] text-[30px] font-bold p-4">Drink menu</div>
 
@@ -144,7 +144,7 @@ const Drink = () => {
             {/* Category Name */}
             <div
               className="font-bold text-xl mb-4 bg-[#f7f7f7] text-black px-2 py-4 border-l border-red-500"
-              ref={(el) => (drinkRefs.current[index] = el)} // Assign ref to each section
+              ref={(el) => (drinkRefs.current[index] = el)} // Assigning ref to each section
             >
               {drinkItem.name}
             </div>

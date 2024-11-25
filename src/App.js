@@ -19,8 +19,8 @@ import Drink from "./Pages/Drink";
 function App() {
 
   let slides = [
-    <img src="images/food2.png" alt="food2" />,
-    <img src="images/food3.jpg" alt="food3" />
+    <img src="images/food2.png" alt="food2" className="w-full h-auto object-cover" />,
+    <img src="images/food3.jpg" alt="food3" className="w-full h-auto object-cover" />
   ];
 
   const menuItems = [
@@ -60,10 +60,10 @@ function App() {
 
   return (
     <Router> 
-      <div className="App">
+      
         <Navbar menuItems={menuItems} />
 
-        <div className="w-[1290px] m-auto pt-5">
+        <div className="px-5 sm:px-2 md:px-20 lg:px-28 w-full">
           <Routes> 
             <Route path="/" element={ /* Homepage Route */ 
               <>
@@ -89,7 +89,7 @@ function App() {
           column2Links={column2Links} 
           companyInfo={companyInfo} 
         />
-      </div>
+      
     </Router>
   );
 }
