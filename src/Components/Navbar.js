@@ -19,6 +19,11 @@ const Navbar = ({ menuItems }) => {
   const handleLogoClick = () => {
     navigate("/"); 
   };
+  const handleMenuItemClick = (route) => {
+    navigate(route); // Navigate to the specified route
+    setToggle(false); // Optionally close the menu after navigation
+  };
+
 
   return (
     <>
@@ -35,8 +40,9 @@ const Navbar = ({ menuItems }) => {
             <div
               key={index}
               className="text-white mx-5 mt-2 mb-[15px] text-[15px] font-normal cursor-pointer"
+              onClick={() => handleMenuItemClick(item.route)}
             >
-              {item}
+              {item.text}
             </div>
           ))}
         </div>
@@ -57,8 +63,8 @@ const Navbar = ({ menuItems }) => {
       </div>
 
       {/* Header Section */}
-      <header className="py-[20px]">
-        <div className=" px-10 sm:px-2 md:px-20 lg:px-28 w-full flex  m-auto items-center justify-between">
+      <header className=" py-[20px] w-full bg-white z-50 fixed-navbar">
+        <div className="px-7 sm:px-2 md:px-20 lg:px-28 w-full flex  mx-auto items-center justify-between ">
           <div className="w-[160px] sm:w-[320px] cursor-pointer " onClick={handleLogoClick}> {/* Add onClick to logo */}
             <img
               src="images/logo.jpg"
@@ -68,16 +74,17 @@ const Navbar = ({ menuItems }) => {
           </div>
           {/* Right side of Header Section */}
           <div
-            className="mr-3.5 mt-2 flex flex-col items-center cursor-pointer "
+            className=" mt-2 flex flex-col items-center cursor-pointer "
             onClick={toggleMenu} 
           >
             {/* icon change based on the toggle state */}
-            {toggle ? <RxCross1 className="text-4xl" /> : <IoMenuOutline className="text-4xl" />}
+            {toggle ? <RxCross1 className="text-3xl" /> : <IoMenuOutline className="text-4xl" />}
             <span className="text-[11px] -mt-2">
               Menu
             </span>
           </div>
         </div>
+        
       </header>
     </>
   );

@@ -17,14 +17,14 @@ const Lunch = () => {
     };
 
     return (
-        <div className="w-[1280px] w-full mx-auto pt-5">
+        <div className=" max-w-[1280px] w-full mx-auto  pt-[100px] sm:pt-5">
             {/* Grid of lunch item names */}
-            <div className="mb-[20px] text-[30px] font-bold p-4">Lunch menu</div>
-            <div className="grid grid-cols-4 gap-7 mb-[50px]">
+            <div className="mb-[20px] md:text-[30px] text-[20px] sm:text-[25px] font-bold py-3">Lunch menu</div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-7 mb-[50px]">
                 {lunchMenu.map((lunchItem, index) => (
                     <div
                         key={index}
-                        className="bg-[#d3b294] p-0.1 text-center text-white cursor-pointer"
+                        className="bg-[#d3b294] p-2 rounded-lg hover:bg-[#b59c7e] text-center text-white cursor-pointer"
                         onClick={() => scrollToSection(index)} // Scroll to section on click
                     >
                         {lunchItem.name}

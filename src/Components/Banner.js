@@ -15,7 +15,7 @@ const Banner = ({ slides }) => {
   return (
     <>
       {/* Carousel */}
-      <div className="relative overflow-hidden w-[1280px] w-full mx-auto h-auto">
+      <div className="pt-[120px] sm:pt-0 relative overflow-hidden max-w-[1280px] w-full mx-auto h-auto">
         <div
           className="flex transition-transform duration-1000 will-change-transform ease-out"
           style={{
