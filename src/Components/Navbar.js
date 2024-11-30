@@ -76,18 +76,23 @@ const Navbar = ({ menuItems }) => {
       {/* Header Section */}
       <header className="py-[20px] w-full bg-white z-50 fixed-navbar">
         <div className="px-7 sm:px-2 md:px-20 lg:px-28 w-full flex mx-auto items-center justify-between">
+          {/* Logo as Text */}
           <div
-            className="w-[160px] sm:w-[320px] cursor-pointer"
+            className="text-[18px] sm:text-[16px] md:text-[20px] font-bold text-green-800 cursor-pointer"
             onClick={handleLogoClick}
           >
-            <img src="images/logo.jpg" alt="logo" className="w-full" />
+            Heaven Fukasaku
           </div>
           {/* Right Side of Header Section */}
           <div
             className="mt-3 flex flex-col items-center cursor-pointer"
             onClick={toggleMenu}
           >
-            {toggle ? (<RxCross1 className="text-3xl" />) : ( <IoMenuOutline className="text-4xl " />)}
+            {toggle ? (
+              <RxCross1 className="text-3xl" />
+            ) : (
+              <IoMenuOutline className="text-4xl" />
+            )}
             <span className="text-[10px] -mt-2">Menu</span>
           </div>
         </div>

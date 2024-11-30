@@ -58,13 +58,23 @@ function App() {
   
 
   const column1Links = [
-    "Top page", "Lunch menu", "Dinner menu", "Drink menu",
-    "Banquet/course menu", "Takeout menu", "Delivery menu"
+   
+    { label: "Lunch menu", path: "/lunch" },
+    { label: "Dinner menu", path: "/dinner" },
+    { label: "Drink menu", path: "/drinks" },
+    { label: "Banquet/course menu", path: "/party" },
+    { label: "Takeout menu", path: "/takeout" },
+    { label: "Delivery menu", path: "/delivery" }
   ];
 
+
+
   const column2Links = [
-    "Heaven North Book West Exit", "(Sales information/access)", "Notice",
-    "Frequently Asked Questions", "Privacy policy", "Company information", "Contact"
+    { label: "Heaven North Book West Exit", path: "/company" },
+    
+    { label: "Notice", path: "/notice" },
+    { label: "Company information", path: "/company-info" },
+    { label: "Contact", path: "/contact" }
   ];
 
   const companyInfo = [
