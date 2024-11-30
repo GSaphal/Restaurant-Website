@@ -19,7 +19,7 @@ const UberEats = () => {
           Enjoy delicious meals delivered right to your doorstep with Uber Eats.
         </p>
         <a
-          href="#"
+          href="https://www.ubereats.com/"
           className="inline-block px-6 py-3 bg-green-500 text-white font-medium rounded-md hover:bg-green-600 transition duration-300"
         >
           Click Here

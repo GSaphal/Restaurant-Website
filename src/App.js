@@ -17,10 +17,8 @@ import UberEats from './Components/UberEats';
 import SocialMediaSection from './Components/SocialMediaSection';
 import PartyCourse from './Pages/PartyCourse';
 import GoToDashboardButton from './Components/GoToDashBoard';
-// import { BrowserRouter as Router, Route ,Switch } from "react-router-dom";
-// import { createBrowserRouter,RouterProvider } from "react-router-dom";
-// import Dinner from "./Pages/Dinner";
-// import DinnerMenu from "./Components/DinnerMenu";
+// import MoreNews from "./Pages/MoreNews";
+
 
 function App() {
 
@@ -106,6 +104,7 @@ function App() {
              <Route path="/takeout" element={<Takeout />} />
              <Route path="/party" element={<PartyCourse/>} />
              <Route path="/company-info" element={<CompanyInformation/>} />
+             {/* <Route path="/morenews" element={<MoreNews/>} /> */}
              
           </Routes>
         </div>

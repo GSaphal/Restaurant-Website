@@ -5,7 +5,7 @@ const Party = () => {
         {
             name: "Women's Association Course",
             image: "/images/womenCourse.jpg",
-            cost: "2,980 yen",
+            cost: "3,280 yen",
             details: {
                 appetizer: [
                     "Kashunut",
@@ -42,8 +42,8 @@ const Party = () => {
         },
         {
             name: "Haven and Overseas Course",
-            image: "/images/HavenCourse.jpg",
-            cost: "3,999 yen",
+            image: "/images/SpecialCourse.jpg",
+            cost: "3,850 yen",
             details: `
             Includes 5 dishes from Haven, 6 dishes from Overseas, all-you-can-drink, curry ＋ all-you-can-eat Nan Rice, dessert.
 
@@ -66,8 +66,8 @@ const Party = () => {
         },
         {
             name: "Special Course",
-            image: "/images/SpecialCourse.jpg",
-            cost: "4,629 yen",
+            image: "/images/HeavenCourse.jpg",
+            cost: "4,400 yen",
             details: {
                 appetizer: [
                     "Kashunut",

@@ -12,7 +12,7 @@ const Menu = ({ menuCards }) => {
   return (
     <div className="w-full max-w-[1280px] mx-auto pt-[40px]">
       {/* Menu title */}
-      <div className="font-bold text-gray-700 text-[20px] mb-[10px]">Menu</div>
+      <div className="font-bold text-gray-700 text-2xl  mb-[10px]">Menu</div>
       
       {/* Thin line */}
       <div className="h-[1px] bg-gray-300 mb-7"></div>

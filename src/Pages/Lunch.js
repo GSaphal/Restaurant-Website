@@ -4,9 +4,9 @@ const Lunch = () => {
     const lunchMenu = [
         { name: "Lunch Set", images: ["/images/LunchSet.jpg"] },
         { name: "Lunch Plate", images: ["/images/LunchPlate.jpg"] },
-        { name: "Side Menu", images: ["/images/sidemenu.jpg"] },
-        { name: "Curry on the spot", images: ["/images/curryonthespot.jpg"] },
-        { name: "Lunch time discount", images: ["/images/LunchDiscount.jpg"] }
+        { name: "Side Menu", images: ["/images/sidemenu.jpg"] }, 
+        { name: "Lunch time discount", images: ["/images/LunchDiscount.jpg"] },
+        { name: "Lunch Takeout", images: ["/images/lunchTakeout.jpg"] }
     ];
 
     // Create refs for each lunch item section
@@ -51,7 +51,7 @@ const Lunch = () => {
                                     key={imgIndex}
                                     src={image}
                                     alt={`${lunchItem.name} ${imgIndex + 1}`}
-                                    className="w-30 h-30 object-cover"
+                                    className="w-30 h-30 object-contain"
                                 />
                             ))}
                         </div>

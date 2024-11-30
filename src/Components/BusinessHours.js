@@ -19,7 +19,7 @@ const BusinessHours = () => {
   };
 
   return (
-    <div className="w-full max-w-[1280px] mx-auto mt-10 px-4">
+    <div className="w-full max-w-[1280px] mx-auto mt-10 px-4 pt-[100px] sm:pt-5">
       {/* Images Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
         <div>
@@ -29,7 +29,7 @@ const BusinessHours = () => {
             className="w-full h-full object-cover rounded-md shadow-md"
           />
         </div>
-        <div >
+        <div>
           <img
             src="images/restaurant2.jpg"
             alt="Restaurant"
@@ -39,23 +39,27 @@ const BusinessHours = () => {
       </div>
 
       {/* Accordion Section */}
-      <div>
+      <div className="flex flex-col items-center ">
+      <h2 className="text-3xl font-bold text-gray-800 mr-8 mb-6 mt-4 text-center">
+        📢 Store Information
+      </h2>
+      <div className="h-[1px] bg-gray-300 mb-10  w-[100px] mx-auto"></div>
         {data.map((item, index) => (
-          <div key={index} className="mb-4">
+          <div key={index} className="mb-4 w-full max-w-md">
             <button
-              className="w-full text-left shadow-sm px-4 py-3 font-light text-sm bg-gray-100 hover:bg-gray-200 flex justify-between items-center rounded-md"
+              className="w-full text-left shadow-md px-6 py-3 font-medium text-sm bg-gray-200 hover:bg-gray-300 flex justify-between items-center rounded-md transition duration-200 ease-in-out transform hover:scale-105 focus:outline-none"
               onClick={() => handleToggle(index)}
             >
-              <span>{item.title}</span>
+              <span className="text-gray-700">{item.title}</span>
               {activeIndex === index ? (
                 <FaChevronUp className="text-sm text-gray-600" />
               ) : (
                 <FaChevronDown className="text-sm text-gray-600" />
               )}
             </button>
-            
+
             {activeIndex === index && (
-              <div className="px-4 py-3 text-gray-700 bg-gray-50 mt-2 rounded-md shadow-sm">
+              <div className="px-6 py-3 text-gray-700 bg-gray-100 mt-2 rounded-md shadow-sm">
                 <p>{item.content}</p>
               </div>
             )}

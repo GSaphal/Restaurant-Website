@@ -15,14 +15,14 @@ const StoreInfo = ({ storeInfo }) => {
   };
 
   return (
-    <div className="w-full mx-auto max-w-[1280px] pt-[40px]">
-      <div className="font-bold text-gray-700 text-[20px] mb-[10px]">Store Information</div>
+    <div className="w-full mx-auto max-w-[1280px] pt-[40px] ">
+      <div className="font-bold text-gray-700 text-2xl mb-[10px]">Store Information</div>
 
       {/* Line */}
       <div className="h-[1px] bg-gray-300 mb-7"></div> 
 
       {/* images in a grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 ">
         {storeInfo.map((info, index) => (
           <div
             key={index}

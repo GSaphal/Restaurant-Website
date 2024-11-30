@@ -2,8 +2,8 @@ import React, { useRef } from "react";
 
 const TakeOut = () => {
     const takeOutMenu = [
-        { name: "Lunch time lunch", images: ["/images/takeou1.png"] },
-        { name: "Dinner time lunch", images: ["/images/takeout2.png"] }
+        { name: "Lunch time lunch", images: ["/images/lunchTakeout.jpg"] },
+        { name: "Dinner time lunch", images: ["/images/dinnerTakeout.jpg"] }
         
     ];
 

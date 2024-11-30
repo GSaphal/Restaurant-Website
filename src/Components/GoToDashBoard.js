@@ -31,7 +31,7 @@ const GoToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-0 right-0 bg-red-600 text-white p-4 rounded-none shadow-lg hover:bg-red-700 focus:outline-none"
+          className="fixed bottom-0 right-0 bg-[#f57224] text-white p-4 rounded-none shadow-lg  hover:bg-orange-600 focus:outline-none" 
           aria-label="Back to top"
         >
           {/* Using React Icon here */}

@@ -1,41 +1,52 @@
 import React, { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 
 const Navbar = ({ menuItems }) => {
   const [toggle, setToggle] = useState(false);
-  const [search, setSearch] = useState("");
-  const navigate = useNavigate(); 
+  // const [search, setSearch] = useState("");
+  const navigate = useNavigate();
 
-  const handleSearchChange = (e) => {
-    setSearch(e.target.value);
-  };
+  // const handleSearchChange = (e) => {
+  //   setSearch(e.target.value);
+  // };
 
   const toggleMenu = () => {
     setToggle(!toggle); // Toggle between true (open) and false (close)
   };
 
   const handleLogoClick = () => {
-    navigate("/"); 
+    navigate("/");
   };
+
   const handleMenuItemClick = (route) => {
     navigate(route); // Navigate to the specified route
     setToggle(false); // Optionally close the menu after navigation
   };
 
-
   return (
     <>
-      {/* Side Menu */}
+      {/* Background Overlay */}
       <div
-        className="w-[320px] h-full bg-[#cd162c] fixed top-0 transition-all duration-300 z-50"
+        className="black-overlay w-full h-full fixed duration-500"
         style={{
-          left: toggle ? "0" : "-100%",
+          opacity: toggle ? 1 : 0,
+          visibility: toggle ? "visible" : "hidden",
+          backgroundColor: "rgba(0, 0, 0, 0.5)", // Optional: semi-transparent black
+          zIndex: 40, // Ensure it appears below the side menu
         }}
+        onClick={toggleMenu} // Close the menu when clicking outside
+      ></div>
+
+      {/* Responsive Side Menu */}
+      <div
+        className={`h-full bg-[#f57224] fixed top-0 transition-all duration-300 z-50 
+          ${toggle ? "left-0" : "-left-full"} 
+          w-[75%] sm:w-[320px]`} // Responsive width for mobile and larger screens
       >
-        <div className="flex flex-col mt-[15px]">
-          {/*  menu items */}
+        <div className="flex flex-col mt-[30px]">
+          {/* Menu Items */}
           {menuItems.map((item, index) => (
             <div
               key={index}
@@ -46,7 +57,7 @@ const Navbar = ({ menuItems }) => {
             </div>
           ))}
         </div>
-        <div className="p-4">
+        {/* <div className="p-4">
           <div className="flex items-center bg-white rounded-md border border-gray-300">
             <input
               type="text"
@@ -59,32 +70,27 @@ const Navbar = ({ menuItems }) => {
               Search
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Header Section */}
-      <header className=" py-[20px] w-full bg-white z-50 fixed-navbar">
-        <div className="px-7 sm:px-2 md:px-20 lg:px-28 w-full flex  mx-auto items-center justify-between ">
-          <div className="w-[160px] sm:w-[320px] cursor-pointer " onClick={handleLogoClick}> {/* Add onClick to logo */}
-            <img
-              src="images/logo.jpg"
-              alt="logo"
-              className="w-full"
-            />
-          </div>
-          {/* Right side of Header Section */}
+      <header className="py-[20px] w-full bg-white z-50 fixed-navbar">
+        <div className="px-7 sm:px-2 md:px-20 lg:px-28 w-full flex mx-auto items-center justify-between">
           <div
-            className=" mt-2 flex flex-col items-center cursor-pointer "
-            onClick={toggleMenu} 
+            className="w-[160px] sm:w-[320px] cursor-pointer"
+            onClick={handleLogoClick}
           >
-            {/* icon change based on the toggle state */}
-            {toggle ? <RxCross1 className="text-3xl" /> : <IoMenuOutline className="text-4xl" />}
-            <span className="text-[11px] -mt-2">
-              Menu
-            </span>
+            <img src="images/logo.jpg" alt="logo" className="w-full" />
+          </div>
+          {/* Right Side of Header Section */}
+          <div
+            className="mt-3 flex flex-col items-center cursor-pointer"
+            onClick={toggleMenu}
+          >
+            {toggle ? (<RxCross1 className="text-3xl" />) : ( <IoMenuOutline className="text-4xl " />)}
+            <span className="text-[10px] -mt-2">Menu</span>
           </div>
         </div>
-        
       </header>
     </>
   );

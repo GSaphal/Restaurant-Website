@@ -2,11 +2,18 @@ import React, { useRef } from "react";
 
 const Dinner = () => {
     const dinnerMenu = [
-        { name: "Steak and Fries", images: ["/images/steak.jpg"] },
-        { name: "Seafood Platter", images: ["/images/seafood.jpg"] },
-        { name: "Vegetarian Dish", images: ["/images/vegetarian.jpg"] },
-        { name: "Pasta Dish", images: ["/images/pasta.jpg"] },
-        { name: "Dessert", images: ["/images/dessert.jpg"] }
+        { name: "Nan", images: ["/images/dinnermenu1.jpg"] },
+        { name: "Curry", images: ["/images/dinnermenu2.jpg"] },
+        { name: "Snacks", images: ["/images/dinnermenu3.jpg"] },
+        { name: "Snacks", images: ["/images/dinnermenu4.jpg"] },
+        { name: "Salad", images: ["/images/dinnermenu5.jpg"] },
+        { name: "Tandoori", images: ["/images/dinnermenu7.jpg"] },
+        { name: "Snacks", images: ["/images/dinnersnacks.jpg"] },
+        
+
+        { name: "Dinner Set", images: ["/images/dinnerSet.jpg"] },
+        { name: "Dessert", images: ["/images/dessert2.jpg"] },
+        { name: "DinnerTakeout", images: ["/images/dinnerTakeout.jpg"] }
     ];
 
     // Create refs for each dinner item section
