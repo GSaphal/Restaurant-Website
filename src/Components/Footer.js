@@ -5,6 +5,7 @@ const Footer = ({ column1Links, column2Links, companyInfo }) => {
   const navigate = useNavigate();
 
   const handleNavigation = (path) => {
+    window.scrollTo(0, 0);
     navigate(path);
   };
 
