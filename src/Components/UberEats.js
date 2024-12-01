@@ -2,7 +2,7 @@ import React from 'react';
 
 const UberEats = () => {
   return (
-    <div className="w-full my-[40px] flex flex-col md:flex-row items-center gap-10 bg-gray-50 p-6 rounded-lg shadow-md">
+    <div className="w-full  my-[120px] sm:my-[40px] flex flex-col md:flex-row items-center gap-10 bg-gray-50 p-6 rounded-lg shadow-md">
       {/* Image Section */}
       <div className="w-full md:w-1/3 flex justify-center">
         <img
