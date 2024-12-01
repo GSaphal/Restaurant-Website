@@ -40,7 +40,7 @@ const BusinessHours = () => {
 
       {/* Accordion Section */}
       <div className="flex flex-col items-center ">
-      <h2 className="text-3xl font-bold text-gray-800 mr-8 mb-6 mt-4 text-center">
+      <h2 className="sm:text-2xl text-xl font-bold text-gray-800 sm:mr-8 mb-6 mt-4 text-center">
         📢 Store Information
       </h2>
       <div className="h-[1px] bg-gray-300 mb-10  w-[100px] mx-auto"></div>

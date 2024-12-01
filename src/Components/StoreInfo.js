@@ -16,7 +16,7 @@ const StoreInfo = ({ storeInfo }) => {
 
   return (
     <div className="w-full mx-auto max-w-[1280px] pt-[40px] ">
-      <div className="font-extralight text-gray-700 text-2xl  mb-[10px]">Store Information</div>
+      <div className="font-bold text-gray-700 text-2xl  mb-[10px]">Store Information</div>
 
       {/* Line */}
       <div className="h-[1px] bg-gray-300 mb-7"></div> 

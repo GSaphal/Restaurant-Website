@@ -23,7 +23,7 @@ const TimelineSection = () => {
 
   return (
     <div className="w-full max-w-[1280px] mx-auto my-20 ">
-      <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+      <h2 className="sm:text-3xl text-2xl font-bold text-gray-800 mb-6 text-center">
         📢 Monthly News & Notices
       </h2>
       <div className="h-[1px] bg-gray-300  w-[180px] mx-auto"></div>

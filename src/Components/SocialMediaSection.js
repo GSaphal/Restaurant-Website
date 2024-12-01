@@ -13,7 +13,7 @@ const SocialMediaCards = () => {
 
   return (
     <div className="w-full max-w-screen-xl mx-auto my-16 px-6 md:px-10">
-      <h1 className="text-3xl font-semibold text-gray-800 mb-6 text-center">Stay Connected</h1>
+      <h1 className="sm:text-3xl text-2xl font-semibold text-gray-800 mb-6 text-center">Stay Connected</h1>
       <div className="h-[1px] bg-gray-300 mb-6 w-[60px] mx-auto"></div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {[
