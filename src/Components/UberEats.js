@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const UberEats = () => {
   return (
@@ -14,15 +14,19 @@ const UberEats = () => {
 
       {/* Text and Button Section */}
       <div className="text-center md:text-left">
-        <h1 className="text-2xl font-semibold text-gray-800 mb-4">Order from Uber Eats</h1>
+        <h1 className="text-2xl font-semibold text-gray-800 mb-4">
+          Uber Eatsから注文する
+        </h1>
         <p className="text-gray-600 mb-6">
-          Enjoy delicious meals delivered right to your doorstep with Uber Eats.
+          Uber Eats でおいしい食事を玄関先までお届けします。{" "}
         </p>
         <a
           href="https://www.ubereats.com/"
+          target="_blank"
+          rel="noreferrer"
           className="inline-block px-6 py-3 bg-green-500 text-white font-medium rounded-md hover:bg-green-600 transition duration-300"
         >
-          Click Here
+          ここをクリック
         </a>
       </div>
     </div>

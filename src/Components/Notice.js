@@ -1,55 +1,45 @@
 import React from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import pageData from "../data/content.json";
+import Title from "./title";
+import HorizontalLine from "./line";
 
-const TimelineSection = () => {
-  const navigate = useNavigate();
-
-  
-  const notices = [
-    {
-      month: "October 2024",
-      content: "Join us for our special Halloween-themed dishes. Available only this weekend!",
-    },
-    {
-      month: "September 2024",
-      content: "Our Autumn menu is now live with fresh seasonal ingredients. Come and try it!",
-    },
-    {
-      month: "August 2024",
-      content: "Our restaurant will be closed for vacation from August 12th to August 15th.",
-    },
-  ];
-
+const TimelineSection = ({ isHidden = false }) => {
+  const { news, newsInformation, newsSeeMore } = pageData.homepage;
   return (
     <div className="w-full max-w-[1280px] mx-auto my-20 ">
-      <h2 className="sm:text-3xl text-2xl font-bold text-gray-800 mb-6 text-center">
-        📢 Monthly News & Notices
-      </h2>
-      <div className="h-[1px] bg-gray-300  w-[180px] mx-auto"></div>
-
-      {/* Notice Section */}
-      <div className="space-y-6 p-10">
-        {notices.map((notice, index) => (
+      <Title title={news["jp"]} />
+      <HorizontalLine />
+      <div className="space-y-6 pb-10">
+        {newsInformation.map((notice, index) => (
           <div
             key={index}
             className="bg-gradient-to-r from-orange-100 to-yellow-100 shadow-lg rounded-lg p-5 hover:scale-105 transition-transform duration-300"
           >
-            <div className="flex items-center space-x-3 mb-2">
-              <FaRegCalendarAlt className="text-orange-500 text-xl" />
-              <span className="text-lg font-semibold text-gray-700">{notice.month}</span>
+            <div className="flex items-center space-x-2 py-2">
+              <FaRegCalendarAlt className="text-orange-500" />
+              <span className="text-sm font-light text-gray-700">
+                {notice.date["jp"]}
+              </span>
             </div>
-            <p className="text-gray-600 text-sm">{notice.content}</p>
+            <h2 className="text-xl font-semibold text-gray-800 pb-2">
+              {notice.title["jp"]}
+            </h2>
+            <p className="text-gray-600 text-sm">{notice.content["jp"]}</p>
           </div>
         ))}
       </div>
 
-      {/* More News Button */}
-      <div className="flex justify-center ">
-        <button  onClick={() => navigate("/morenews")} className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-6 rounded-md shadow-md transition-all">
-          See More
-        </button>
-      </div>
+      {!isHidden && (
+        <div className="flex justify-center ">
+          <Link to="/news">
+            <button className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-6 rounded-md shadow-md transition-all">
+              {newsSeeMore["jp"]}
+            </button>
+          </Link>
+        </div>
+      )}
     </div>
   );
 };

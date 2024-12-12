@@ -1,0 +1,412 @@
+{
+  "title": {
+    "en": "Heaven Fukasaku",
+    "jp": "天深作"
+  },
+  "store": {
+    "title": {
+      "en": "Store Information",
+      "jp": "店舗情報"
+    },
+    "name": {
+      "en": "SRS Co., Ltd",
+      "jp": "株式会社　エス・ピ"
+    },
+    "businessNumber": {
+      "en": "364-0031",
+      "jp": "〒337-0003"
+    },
+    "address": {
+      "en": "1-1-1, Heaven, Fukasaku, Heaven",
+      "jp": "埼玉県さいたま市見沼区深作3-12-14"
+    },
+    "address2": {
+      "en": "Heaven Building 1F",
+      "jp": "天国ビル1階"
+    },
+    "telephone": {
+      "en": "048-687-1033",
+      "jp": "048-687-1033"
+    },
+    "businessContent":{
+      "en": "Management of a restaurant",
+      "jp": "飲食店の経営"
+    },
+    "representative": {
+      "en": "Candel Gobinda",
+      "jp": "レグミ　プラタプ"
+    },
+    "dateEstablished":{
+      "en": "January 1, 2020",
+      "jp": "2017 年 9 月 11 日"
+    },
+    "capital":{
+      "en":"5 million yen",
+      "jp":"500 万円"
+    },
+    "operatingStore":{
+      "en":"Indian Curry Heaven Fukasaku store",
+      "jp":"インドカレー天国 深作店"
+    }
+  },
+  "homepage": {
+    "menu": {
+      "en": "Menu",
+      "jp": "メニュー"
+    },
+    "menuItems": [
+      {
+        "name": {
+          "en": "Lunch Menu",
+          "jp": "ランチメニュー"
+        },
+        "image": "/assets/homepage/lunch_image.jpg",
+        "route": "/lunch"
+      },
+      {
+        "name": {
+          "en": "Dinner Menu",
+          "jp": "ディナーメニュー"
+        },
+        "image": "/assets/homepage/dinner_image.jpg",
+        "route": "/lunch"
+      },
+      {
+        "name": {
+          "en": "Drinks Menu",
+          "jp": "ドリンクメニュー"
+        },
+        "image": "/assets/homepage/drinks_image.jpg",
+        "route": "/lunch"
+      },
+      {
+        "name": {
+          "en": "Party Menu",
+          "jp": "パーティーメニュー"
+        },
+        "image": "/assets/homepage/party_image.jpg",
+        "route": "/lunch"
+      },
+      {
+        "name": {
+          "en": "Takeout Menu",
+          "jp": "テイクアウトメニュー"
+        },
+        "image": "/assets/homepage/takeaway_image.jpg",
+        "route": "/lunch"
+      },
+      {
+        "name": {
+          "en": "Delivery",
+          "jp": "デリバリー"
+        },
+        "image": "/assets/homepage/delivery_image.png",
+        "route": "/delivery"
+      }
+    ],
+    "storeInformation": {
+      "en": "Store Information",
+      "jp": "店舗情報"
+    },
+    "news": {
+      "en": "Monthly News and Notices",
+      "jp": "月間ニュース・お知らせ"
+    },
+    "storeInformationItems": {
+      "image": "/assets/homepage/store_image.jpg"
+    },
+    "newsInformation": [
+      {
+        "date": {
+          "en": "January 2024",
+          "jp": "2024年1月"
+        },
+        "title": {
+          "en": "New Year's Day",
+          "jp": "新年のご挨拶"
+        },
+        "content": {
+          "en": "We will be closed on New Year's Day.",
+          "jp": "新年のご挨拶"
+        }
+      },
+      {
+        "date": {
+          "en": "January 2024",
+          "jp": "2024年1月"
+        },
+        "title": {
+          "en": "Valentine's Day",
+          "jp": "バレンタインデー"
+        },
+        "content": {
+          "en": "We will be open on Valentine's Day.",
+          "jp": "バレンタインデー"
+        }
+      },
+      {
+        "date": {
+          "en": "January 2024",
+          "jp": "2024年1月"
+        },
+        "title": {
+          "en": "White Day",
+          "jp": "ホワイトデー"
+        },
+        "content": {
+          "en": "We will be open on White Day.",
+          "jp": "ホワイトデー"
+        }
+      }
+    ],
+    "newsSeeMore": {
+      "en": "View More News",
+      "jp": "ニュースをもっと見る"
+    },
+    "socials": {
+      "en": "Stay Connected",
+      "jp": "つながりを保つ"
+    }
+  },
+  "sidebar": [
+    {
+      "en": "Home",
+      "jp": "ホーム",
+      "route": "/"
+    },
+
+    {
+      "en": "Lunch Menu",
+      "jp": "ランチメニュー",
+      "route": "/lunch"
+    },
+    {
+      "en": "Dinner Menu",
+      "jp": "ディナーメニュー",
+      "route": "/dinner"
+    },
+    {
+      "en": "Drinks Menu",
+      "jp": "ドリンクメニュー",
+      "route": "/drinks"
+    },
+    {
+      "en": "Dessert Menu",
+      "jp": "デザートメニュー",
+      "route": "/dessert"
+    },
+
+    {
+      "en": "Party Menu",
+      "jp": "パーティーメニュー",
+      "route": "/party"
+    },
+    {
+      "en": "Takeout Menu",
+      "jp": "テイクアウトメニュー",
+      "route": "/takeout"
+    },
+    {
+      "en": "Contact",
+      "jp": "お問い合わせ",
+      "route": "/contact"
+    },
+    {
+      "en": "Company Information",
+      "jp": "会社情報",
+      "route": "/company"
+    }
+  ],
+  "lunch": {
+    "title": {
+      "en": "Lunch Menu",
+      "jp": "ランチメニュー"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Lunch Plate",
+          "jp": "ランチプレート"
+        },
+        "image": ["/assets/lunch/lunch_plate.jpg"]
+      },
+      {
+        "title": {
+          "en": "Lunch Set",
+          "jp": "ランチセット"
+        },
+        "image": ["/assets/lunch/lunch_set.jpg"]
+      },
+
+      {
+        "title": {
+          "en": "Side Menu",
+          "jp": "サイドメニュー"
+        },
+        "image": ["/assets/lunch/lunch_sidemenu.jpg"]
+      },
+      {
+        "title": {
+          "en": "Lunch Time Discount",
+          "jp": "ランチタイム割引"
+        },
+        "image": ["/assets/lunch/lunch_discount.jpg"]
+      },
+      {
+        "title": {
+          "en": "Lunch Takeout",
+          "jp": "ランチテイクアウト"
+        },
+        "image": ["/assets/lunch/lunch_takeout.jpg"]
+      }
+    ]
+  },
+  "dinner": {
+    "title": {
+      "en": "Dinner Menu",
+      "jp": "ディナーメニュー"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Drinks Menu",
+          "jp": "ドリンクメニュー"
+        },
+        "image": [
+          "/assets/dinner/dinner_drinks1.jpg",
+          "/assets/dinner/dinner_drinks2.jpg",
+          "/assets/dinner/dinner_drinks3.jpg"
+        ]
+      },
+      {
+        "title": {
+          "en": "Salad and Snacks",
+          "jp": "サラダとスナック"
+        },
+        "image": [
+          "/assets/dinner/dinner_snack0.jpg",
+          "/assets/dinner/dinner_snack1.jpg",
+          "/assets/dinner/dinner_snack2.jpg",
+          "/assets/dinner/dinner_snack3.jpg"
+        ]
+      },
+      {
+        "title": {
+          "en": "Tandoori",
+          "jp": "タンドリー"
+        },
+        "image": ["/assets/dinner/dinner_tandoori.jpg"]
+      },
+      {
+        "title": {
+          "en": "Rice",
+          "jp": "ライス"
+        },
+        "image": ["/assets/dinner/dinner_rice.png"]
+      },
+      {
+        "title": {
+          "en": "Nan",
+          "jp": "ナン"
+        },
+        "image": ["/assets/dinner/dinner_nan.jpg"]
+      },
+      {
+        "title": {
+          "en": "Dinner Set",
+          "jp": "カレー"
+        },
+        "image": [
+          "/assets/dinner/dinner_set.jpg",
+          "/assets/dinner/dinner_curry1.png",
+            "/assets/dinner/dinner_curry2.png"
+        ]
+      },
+      {
+        "title": {
+          "en": "Dessert Menu",
+          "jp": "ドリンクメニュー"
+        },
+        "image": ["/assets/desserts/desserts.jpg"]
+      },
+      {
+        "title": {
+          "en": "Dinner Takeout",
+          "jp": "ディナーテイクアウト"
+        },
+        "image": ["/assets/dinner/dinner_takeout.jpg"]
+      }
+    ]
+  },
+  "drinks": {
+    "title": {
+      "en": "Drinks Menu",
+      "jp": "ドリンクメニュー"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Drinks Menu",
+          "jp": "ドリンクメニュー"
+        },
+        "image": [
+          "/assets/dinner/dinner_drinks1.jpg",
+          "/assets/dinner/dinner_drinks2.jpg",
+          "/assets/dinner/dinner_drinks3.jpg"
+        ]
+      }
+    ]
+  },
+  "dessert": {
+    "title": {
+      "en": "Dessert Menu",
+      "jp": "ドリンクメニュー"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Drinks Menu",
+          "jp": "ドリンクメニュー"
+        },
+        "image": ["/assets/desserts/desserts.jpg"]
+      }
+    ]
+  },
+  "party": {
+    "title": {
+      "en": "Party Menu",
+      "jp": "ドリンクメニュー"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Party Menu",
+          "jp": "ドリンクメニュー"
+        },
+        "image": [
+          "/assets/party/party1.jpg",
+          "/assets/party/party2.jpg",
+          "/assets/party/partygirls.jpg"
+        ]
+      }
+    ]
+  },
+  "takeout": {
+    "title": {
+      "en": "Takeout Menu",
+      "jp": "ドリンクメニュー"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Takeout Menu",
+          "jp": "ドリンクメニュー"
+        },
+        "image": [
+          "/assets/lunch/lunch_takeout.jpg",
+          "/assets/dinner/dinner_takeout.jpg"
+        ]
+      }
+    ]
+  }
+}

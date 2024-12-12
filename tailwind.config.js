@@ -6,7 +6,16 @@ module.exports = {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'], // Add Roboto font under extend
       },
+      container:{
+        center:true,
+        padding:10
+      },
+      colors:{
+        "primary":"#a86060",
+      }
+  
     },
+   
   },
   plugins: [],
 }
