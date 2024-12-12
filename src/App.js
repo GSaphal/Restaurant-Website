@@ -1,19 +1,19 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import CompanyInformation from "./pages/Company";
-import Lunch from "./pages/Lunch";
-import Takeout from "./pages/Takeout";
-import Drinks from "./pages/Drinks";
-import Dinner from "./pages/Dinner";
-import ContactForm from "./components/ContactForm";
-import BusinessHours from "./components/BusinessHours";
-import UberEats from "./components/UberEats";
-import PartyCourse from "./pages/PartyCourse";
-import Home from "./pages/Home";
-import Layout from "./layout";
 import { useEffect } from "react";
-import Dessert from "./pages/Dessert";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Layout from "./layout";
+import Home from "./Pages/Home";
+import Lunch from "./Pages/Lunch";
+import Drinks from "./Pages/Drinks";
+import Dinner from "./Pages/Dinner";
+import Dessert from "./Pages/Dessert";
+import PartyCourse from "./Pages/PartyCourse";
+import Takeout from "./Pages/Takeout";
+import ContactForm from "./Pages/ContactForm";
+import BusinessHours from "./Pages/BusinessHours";
+import UberEats from "./Pages/UberEats";
+import CompanyInformation from "./Pages/Company";
+import News from "./Pages/News";
 import { ToastContainer } from "react-toastify";
-import News from "./pages/News";
 
 function App() {
   useEffect(() => {
