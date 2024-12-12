@@ -8,12 +8,12 @@ import Dinner from "./Pages/Dinner";
 import Dessert from "./Pages/Dessert";
 import PartyCourse from "./Pages/PartyCourse";
 import Takeout from "./Pages/Takeout";
-import ContactForm from "./Pages/ContactForm";
-import BusinessHours from "./Pages/BusinessHours";
 import UberEats from "./Pages/UberEats";
 import CompanyInformation from "./Pages/Company";
 import News from "./Pages/News";
 import { ToastContainer } from "react-toastify";
+import BusinessHours from "./Pages/BusinessHours";
+import ContactForm from "./Pages/ContactForm";
 
 function App() {
   useEffect(() => {

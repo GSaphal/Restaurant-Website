@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Title from "./title";
-import HorizontalLine from "./line";
+import Title from "../Components/title";
+import HorizontalLine from "../Components/line";
 import {
   FaLocationArrow,
   FaPhone,

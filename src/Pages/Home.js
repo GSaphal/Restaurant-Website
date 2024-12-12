@@ -1,10 +1,10 @@
 import React from "react";
-import Banner from "../components/Banner";
-import Menu from "../components/Menu";
-import Notice from "../components/Notice";
-import SocialMediaSection from "../components/SocialMediaSection";
-import GoToDashboardButton from "../components/GoToDashBoard";
-import StoreInfo from "../components/StoreInfo";
+import Banner from "../Components/Banner";
+import Menu from "../Components/Menu";
+import Notice from "../Components/Notice";
+import SocialMediaSection from "../Components/SocialMediaSection";
+import GoToDashboardButton from "../Components/GoToDashBoard";
+import StoreInfo from "../Components/StoreInfo";
 
 const Home = () => {
 

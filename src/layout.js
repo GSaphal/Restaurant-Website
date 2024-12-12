@@ -1,6 +1,6 @@
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import GoToDashboardButton from "./components/GoToDashBoard";
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
+import GoToDashboardButton from "./Components/GoToDashBoard";
 
 const Layout = ({ children }) => {
   return (

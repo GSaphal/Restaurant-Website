@@ -1,4 +1,4 @@
-import Notice from "../components/Notice";
+import Notice from "../Components/Notice";
 
 const News=()=>{
     return <Notice isHidden />;
