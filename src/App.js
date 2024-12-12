@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import CompanyInformation from "./pages/CompanyInformation";
+import CompanyInformation from "./pages/Company";
 import Lunch from "./pages/Lunch";
 import Takeout from "./pages/Takeout";
 import Drinks from "./pages/Drinks";
@@ -33,7 +33,7 @@ function App() {
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/company" element={<BusinessHours />} />
           <Route path="/delivery" element={<UberEats />} />
-          <Route path="/company-info" element={<CompanyInformation />} />
+          <Route path="/company" element={<CompanyInformation />} />
           <Route path="/news" element={<News />} />
         </Routes>
         <ToastContainer />
