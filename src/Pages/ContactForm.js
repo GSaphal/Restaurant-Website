@@ -8,7 +8,7 @@ import {
   FaRecordVinyl,
   FaStore,
 } from "react-icons/fa";
-import pageData from "../data/content.json";
+import pageData from "../Data/content.json";
 import { toast } from 'react-toastify';
 
 const ContactForm = () => {

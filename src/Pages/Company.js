@@ -1,5 +1,5 @@
 import React from "react";
-import pageData from "../data/content.json";
+import pageData from "../Data/content.json";
 
 const CompanyInformation = () => {
   const { store } = pageData;

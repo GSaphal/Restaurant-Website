@@ -14,7 +14,7 @@ const Home = () => {
       <Banner />
       <Menu />
       <StoreInfo />
-      <Notice />
+      {/* <Notice /> */}
       <SocialMediaSection />
       <GoToDashboardButton />
     </div>

@@ -28,7 +28,7 @@
       "en": "048-687-1033",
       "jp": "048-687-1033"
     },
-    "businessContent":{
+    "businessContent": {
       "en": "Management of a restaurant",
       "jp": "飲食店の経営"
     },
@@ -36,17 +36,17 @@
       "en": "Candel Gobinda",
       "jp": "レグミ　プラタプ"
     },
-    "dateEstablished":{
+    "dateEstablished": {
       "en": "January 1, 2020",
       "jp": "2017 年 9 月 11 日"
     },
-    "capital":{
-      "en":"5 million yen",
-      "jp":"500 万円"
+    "capital": {
+      "en": "5 million yen",
+      "jp": "500 万円"
     },
-    "operatingStore":{
-      "en":"Indian Curry Heaven Fukasaku store",
-      "jp":"インドカレー天国 深作店"
+    "operatingStore": {
+      "en": "Indian Curry Heaven Fukasaku store",
+      "jp": "インドカレー天国 深作店"
     }
   },
   "homepage": {
@@ -69,7 +69,7 @@
           "jp": "ディナーメニュー"
         },
         "image": "/assets/homepage/dinner_image.jpg",
-        "route": "/lunch"
+        "route": "/dinner"
       },
       {
         "name": {
@@ -77,15 +77,15 @@
           "jp": "ドリンクメニュー"
         },
         "image": "/assets/homepage/drinks_image.jpg",
-        "route": "/lunch"
+        "route": "/drinks"
       },
       {
         "name": {
           "en": "Party Menu",
-          "jp": "パーティーメニュー"
+          "jp": "宴会・コースメニュー"
         },
         "image": "/assets/homepage/party_image.jpg",
-        "route": "/lunch"
+        "route": "/party"
       },
       {
         "name": {
@@ -93,7 +93,7 @@
           "jp": "テイクアウトメニュー"
         },
         "image": "/assets/homepage/takeaway_image.jpg",
-        "route": "/lunch"
+        "route": "/takeout"
       },
       {
         "name": {
@@ -198,7 +198,7 @@
 
     {
       "en": "Party Menu",
-      "jp": "パーティーメニュー",
+      "jp": "宴会・コースメニュー",
       "route": "/party"
     },
     {
@@ -215,6 +215,11 @@
       "en": "Company Information",
       "jp": "会社情報",
       "route": "/company"
+    },
+    {
+      "en": "Shop Details",
+      "jp": "店舗情報",
+      "route": "/store"
     }
   ],
   "lunch": {
@@ -319,7 +324,7 @@
         "image": [
           "/assets/dinner/dinner_set.jpg",
           "/assets/dinner/dinner_curry1.png",
-            "/assets/dinner/dinner_curry2.png"
+          "/assets/dinner/dinner_curry2.png"
         ]
       },
       {
@@ -360,13 +365,13 @@
   "dessert": {
     "title": {
       "en": "Dessert Menu",
-      "jp": "ドリンクメニュー"
+      "jp": "デザートメニュ- "
     },
     "items": [
       {
         "title": {
-          "en": "Drinks Menu",
-          "jp": "ドリンクメニュー"
+          "en": "Dessert Menu",
+          "jp": "デザートメニュ- "
         },
         "image": ["/assets/desserts/desserts.jpg"]
       }
@@ -375,32 +380,50 @@
   "party": {
     "title": {
       "en": "Party Menu",
-      "jp": "ドリンクメニュー"
+      "jp": "宴会・コースメニュー"
     },
     "items": [
       {
         "title": {
-          "en": "Party Menu",
-          "jp": "ドリンクメニュー"
+          "en": "Ladies Course",
+          "jp": "女子会コース"
         },
-        "image": [
-          "/assets/party/party1.jpg",
-          "/assets/party/party2.jpg",
-          "/assets/party/partygirls.jpg"
-        ]
+        "image": ["/assets/party/partygirls.jpg"]
+      },
+      {
+        "title": {
+          "en": "Heaven Course",
+          "jp": "ヘブンコース "
+        },
+        "image": ["/assets/party/party1.jpg"]
+      },
+
+      {
+        "title": {
+          "en": "kaigai course",
+          "jp": "海外コース"
+        },
+        "image": ["/assets/party/party1.jpg"]
+      },
+      {
+        "title": {
+          "en": "special course",
+          "jp": "スペシャルコース "
+        },
+        "image": ["/assets/party/party2.jpg"]
       }
     ]
   },
   "takeout": {
     "title": {
       "en": "Takeout Menu",
-      "jp": "ドリンクメニュー"
+      "jp": "テイクアウトメニュー "
     },
     "items": [
       {
         "title": {
           "en": "Takeout Menu",
-          "jp": "ドリンクメニュー"
+          "jp": "テイクアウトメニュー "
         },
         "image": [
           "/assets/lunch/lunch_takeout.jpg",
@@ -408,5 +431,72 @@
         ]
       }
     ]
+  },
+  "shop":{
+    "name":{
+      "en":"Indian Curry Heaven Fukasaku Branch",
+      "jp":"インドカレーヘブン深作店(営業時間・アクセス)"
+    },
+    "nearestStation":{
+      "label":{
+        "en":"Nearest Station",
+        "jp":"最寄駅"
+      },
+      "value":{
+        "en":"30 minutes on foot from Higashi-Omiya Station on the JR Utsunomiya Line, 25 minutes on foot from Shichiri Station on the Tobu Urban Park Line",
+        "jp":"JR宇都宮線　東大宮駅から徒歩30分、東武アーバンパークライン七里駅から徒歩25分"
+      }
+    },
+    "address":{
+      "label":{
+        "en":"Address",
+        "jp":"住所"
+      },
+      "value":{
+        "en":"3-12-14 Fukasaku, Minuma-ku, Saitama City, Saitama Prefecture",
+        "jp":"埼玉県さいたま市見沼区深作3-12-14"
+      }
+    },
+    "telFax":{
+      "label":{
+        "en":"TEL/FAX",
+        "jp":"TEL/FAX"
+      },
+      "value":{
+        "en":"048-687-1033",
+        "jp":"048-687-1033"
+      }
+    },
+    "businessHours":{
+      "label":{
+        "en":"Business hours",
+        "jp":"営業時間"
+      },
+      "value":{
+        "en":"Lunch: 11:00-15:00\nDinner: 17:00-23:00",
+        "jp":"ランチ: 11:00-15:00\nディナー: 17:00-23:00"
+      }
+    },
+    "closed":{
+      "label":{
+        "en":"Closed",
+        "jp":"定休日"
+      },
+      "value":{
+        "en":"Every Monday\n* If Monday is a public holiday, closed the following Tuesday\n* If Monday and Tuesday are public holidays, no closed days",
+        "jp":"毎週月曜日\n* 月曜日が祝日の場合は翌火曜日\n* 月曜日と火曜日が祝日の場合は休まず営業"
+      }
+    },
+    "parking":{
+      "label":{
+        "en":"Parking",
+        "jp":"駐車場"
+      },
+      "value":{
+        "en":"12 spaces in front of the store and along Route 16.",
+        "jp":"店舗前と国道16号沿いに12台分"
+      }
+    }
   }
+
 }

@@ -23,9 +23,9 @@ const Banner = () => {
   return (
     <>
       {/* Carousel */}
-      <div className="pt-[120px] sm:pt-0 relative overflow-hidden max-w-[1280px] w-full mx-auto h-auto">
+      <div className="relative overflow-hidden max-w-[1280px] w-full mx-auto h-auto">
         <div
-          className="flex transition-transform duration-1000 will-change-transform ease-out"
+          className="pt-4 flex transition-transform duration-1000 will-change-transform ease-out"
           style={{
             transform: `translateX(-${current * 100}%)`, // Slide transition
           }}
@@ -34,14 +34,15 @@ const Banner = () => {
             <div key={index} className="flex-shrink-0 w-full">
               <img
                 src={slide.src}
-                alt="food2"
-                className="w-full h-[450px] object-cover"
+                alt={`Slide ${index + 1}`}
+                className="w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover sm:object-contain"
               />
             </div>
           ))}
         </div>
       </div>
 
+      {/* Navigation Dots */}
       <div className="flex justify-center gap-4 pt-5">
         {slides.map((_, index) => (
           <div

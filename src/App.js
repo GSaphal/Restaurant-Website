@@ -14,6 +14,7 @@ import News from "./Pages/News";
 import { ToastContainer } from "react-toastify";
 import BusinessHours from "./Pages/BusinessHours";
 import ContactForm from "./Pages/ContactForm";
+import ShopInformation from "./Pages/ShopInformation";
 
 function App() {
   useEffect(() => {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/delivery" element={<UberEats />} />
           <Route path="/company" element={<CompanyInformation />} />
           <Route path="/news" element={<News />} />
+          <Route path="/store" element={<ShopInformation />} />
         </Routes>
         <ToastContainer />
       </Layout>

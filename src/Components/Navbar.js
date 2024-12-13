@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
-import pageData from "../data/content.json";
+import pageData from "../Data/content.json";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -61,10 +61,11 @@ const Navbar = () => {
       <header className="py-[20px] w-full bg-white z-50">
         <div className="w-full flex mx-auto items-center justify-between">
           <div
-            className="text-md sm:text-md md:text-xl font-bold text-green-800 cursor-pointer"
+            className="text-md sm:text-md md:text-xl font-bold text-primary cursor-pointer"
             onClick={handleLogoClick}
           >
-            <img src="/logo.png" alt="logo" className="w-full h-16" />
+            ヘブン深作店
+            {/* <img src="/logo.png" alt="logo" className="w-full h-16" /> */}
           </div>
 
           <div

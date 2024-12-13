@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { FaFacebookF, FaTwitter, FaLine } from "react-icons/fa";
-import pageData from "../data/content.json";
+import pageData from "../Data/content.json";
 import Title from "./title";
 import HorizontalLine from "./line";
 
@@ -16,10 +16,10 @@ const SocialMediaCards = () => {
   const { socials } = pageData.homepage;
 
   return (
-    <div className="w-full max-w-screen-xl mx-auto my-16 px-6 md:px-10">
+    <div className="w-full max-w-screen-xl mx-auto my-16 px-6 sm:px-10">
       <Title title={socials["jp"]} />
       <HorizontalLine />
-      <div className="flex flex-wrap gap-6 pt-8 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
         {[
           {
             title: "Follow us on Facebook",
@@ -44,30 +44,18 @@ const SocialMediaCards = () => {
             bg: "bg-blue-500",
             textColor: "text-white",
           },
-          {
-            title: "Connect on LINE",
-            src: "https://line.me/en/",
-            icon: <FaLine size={24} className="text-white" />,
-            bg: "bg-green-500",
-            textColor: "text-white",
-          },
         ].map((social, index) => (
           <div
             key={index}
-            className={`bg-white shadow-lg rounded-lg flex flex-col items-center text-center p-4 transition-transform transform hover:scale-105 hover:shadow-2xl`}
-            style={{
-              flex: "1 1 calc(33.33% - 1.5rem)",
-              maxWidth: "calc(33.33% - 1.5rem)",
-            }}
+            className="bg-white shadow-lg rounded-lg flex flex-col items-center text-center p-4 transition-transform transform hover:scale-105 hover:shadow-2xl"
           >
-       
-            {/* Reduced bottom margin */}
+            {/* Social Media Content */}
             {social.src ? (
-              <div className="relative w-full max-w-full h-[250px] overflow-hidden rounded-lg">
+              <div className="relative w-full h-[250px] overflow-hidden rounded-lg">
                 <iframe
                   title={social.title}
                   src={social.src}
-                  className="w-full h-[250px]"
+                  className="w-full h-full"
                   style={{ border: "none" }}
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                 ></iframe>

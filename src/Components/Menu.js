@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import pageData from "../data/content.json";
+import pageData from "../Data/content.json";
 import MenuCard from "./cards/menu";
 import Title from "./title";
 import HorizontalLine from "./line";
@@ -8,10 +8,13 @@ import HorizontalLine from "./line";
 const Menu = () => {
   const { menuItems, menu } = pageData.homepage;
   return (
-    <div className="w-full max-w-[1280px] mx-auto pt-[40px]">
+    <div className="w-full max-w-[1280px] mx-auto pt-[40px] sm:pt-[60px] px-4 sm:px-6 md:px-8">
+      {/* Title Section */}
       <Title title={menu["jp"]} />
       <HorizontalLine />
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+      {/* Grid Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-6">
         {menuItems.map((menu, index) => (
           <Link to={menu.route} key={index}>
             <MenuCard key={index} name={menu.name["jp"]} src={menu.image} />
