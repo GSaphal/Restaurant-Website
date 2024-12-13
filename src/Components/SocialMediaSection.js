@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { FaFacebookF, FaTwitter, FaLine } from "react-icons/fa";
+import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import pageData from "../data/content.json";
 import Title from "./title";
 import HorizontalLine from "./line";

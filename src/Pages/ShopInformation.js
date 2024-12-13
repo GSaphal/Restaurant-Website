@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import pageData from "../data/content.json";
 
 const ShopInformation = () => {
@@ -21,9 +20,7 @@ const ShopInformation = () => {
     { label: shop.parking.label["jp"], value: shop.parking.value["jp"] },
   ];
 
-  const handleToggle = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
-  };
+
 
   return (
     <div className="w-full max-w-[1280px] mx-auto mt-10 px-4">
