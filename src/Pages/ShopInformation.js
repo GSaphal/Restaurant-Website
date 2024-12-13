@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import pageData from "../data/content.json";
 
 const ShopInformation = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
   const { shop } = pageData;
 
   const data = [
