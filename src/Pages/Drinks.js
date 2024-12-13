@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import pageData from "../Data/content.json";
+import pageData from "../data/content.json";
 import InnerMenuPage from "../Components/menu-inner";
 
 const Drinks = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import pageData from "../Data/content.json";
+import pageData from "../data/content.json";
 
 const Footer = () => {
   const column1Links = pageData.sidebar.slice(0, 5);

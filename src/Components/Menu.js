@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import pageData from "../Data/content.json";
+import pageData from "../data/content.json";
 import MenuCard from "./cards/menu";
 import Title from "./title";
 import HorizontalLine from "./line";

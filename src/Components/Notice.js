@@ -1,7 +1,7 @@
 import React from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import pageData from "../Data/content.json";
+import pageData from "../data/content.json";
 import Title from "./title";
 import HorizontalLine from "./line";
 

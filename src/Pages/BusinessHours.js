@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import pageData from "../Data/content.json";
+import pageData from "../data/content.json";
 
 const BusinessHours = () => {
   const [activeIndex, setActiveIndex] = useState(null);
