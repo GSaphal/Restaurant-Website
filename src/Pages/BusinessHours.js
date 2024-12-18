@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import pageData from "../data/content.json";
+import BackButton from "../button";
 
 const BusinessHours = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -8,7 +9,7 @@ const BusinessHours = () => {
 
   const data = [
     { label: "会社名", value: store.name["jp"] },
-    { label: "位置", value: store.address["jp"] },
+    { label: "所在地", value: store.address["jp"] },
     { label: "業務内容", value: store.businessContent["jp"] },
     { label: "代表", value: store.representative["jp"] },
     { label: "設立", value: store.dateEstablished["jp"] },
@@ -23,9 +24,10 @@ const BusinessHours = () => {
   return (
     <div className="w-full max-w-[1280px] mx-auto mt-10 px-4">
       {/* Accordion Section */}
+      <BackButton />
       <div className="flex flex-col items-center ">
         <h2 className="text-3xl font-bold text-gray-800 mr-8 mb-6 mt-4 text-center">
-          {store.title["jp"]}
+          会社情報
         </h2>
         <div className="h-[1px] bg-gray-300 mb-10  w-[100px] mx-auto"></div>
         {data.map((item, index) => (

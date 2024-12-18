@@ -1,7 +1,7 @@
 {
   "title": {
     "en": "Heaven Fukasaku",
-    "jp": "天深作"
+    "jp": "インドカレーヘブン深作店"
   },
   "store": {
     "title": {
@@ -46,7 +46,7 @@
     },
     "operatingStore": {
       "en": "Indian Curry Heaven Fukasaku store",
-      "jp": "インドカレー天国 深作店"
+      "jp": "インドカレーヘブン深作店"
     }
   },
   "homepage": {
@@ -207,9 +207,9 @@
       "route": "/takeout"
     },
     {
-      "en": "Contact",
-      "jp": "お問い合わせ",
-      "route": "/contact"
+      "en": "Shop Details",
+      "jp": "店舗情報",
+      "route": "/store"
     },
     {
       "en": "Company Information",
@@ -217,9 +217,9 @@
       "route": "/company"
     },
     {
-      "en": "Shop Details",
-      "jp": "店舗情報",
-      "route": "/store"
+      "en": "Contact",
+      "jp": "お問い合わせ",
+      "route": "/contact"
     }
   ],
   "lunch": {
@@ -319,10 +319,16 @@
       {
         "title": {
           "en": "Dinner Set",
+          "jp": "ディナーセットメニュー"
+        },
+        "image": ["/assets/dinner/dinner_set.jpg"]
+      },
+      {
+        "title": {
+          "en": "Curry",
           "jp": "カレー"
         },
         "image": [
-          "/assets/dinner/dinner_set.jpg",
           "/assets/dinner/dinner_curry1.png",
           "/assets/dinner/dinner_curry2.png"
         ]
@@ -330,7 +336,7 @@
       {
         "title": {
           "en": "Dessert Menu",
-          "jp": "ドリンクメニュー"
+          "jp": "デザート"
         },
         "image": ["/assets/desserts/desserts.jpg"]
       },
@@ -432,71 +438,84 @@
       }
     ]
   },
-  "shop":{
-    "name":{
-      "en":"Indian Curry Heaven Fukasaku Branch",
-      "jp":"インドカレーヘブン深作店(営業時間・アクセス)"
+  "shop": {
+    "name": {
+      "en": "Indian Curry Heaven Fukasaku Branch",
+      "jp": "営業時間・アクセス"
     },
-    "nearestStation":{
-      "label":{
-        "en":"Nearest Station",
-        "jp":"最寄駅"
+    "nearestStation": {
+      "label": {
+        "en": "Nearest Station",
+        "jp": "最寄駅"
       },
-      "value":{
-        "en":"30 minutes on foot from Higashi-Omiya Station on the JR Utsunomiya Line, 25 minutes on foot from Shichiri Station on the Tobu Urban Park Line",
-        "jp":"JR宇都宮線　東大宮駅から徒歩30分、東武アーバンパークライン七里駅から徒歩25分"
+      "value": {
+        "en": "30 minutes on foot from Higashi-Omiya Station on the JR Utsunomiya Line, 25 minutes on foot from Shichiri Station on the Tobu Urban Park Line",
+        "jp": "JR宇都宮線 東大宮駅から徒歩30分 <br/> 東武アーバンパークライン七里駅から徒歩25分"
       }
     },
-    "address":{
-      "label":{
-        "en":"Address",
-        "jp":"住所"
+    "address": {
+      "label": {
+        "en": "Address",
+        "jp": "住所"
       },
-      "value":{
-        "en":"3-12-14 Fukasaku, Minuma-ku, Saitama City, Saitama Prefecture",
-        "jp":"埼玉県さいたま市見沼区深作3-12-14"
+      "value": {
+        "en": "3-12-14 Fukasaku, Minuma-ku, Saitama City, Saitama Prefecture",
+        "jp": "埼玉県さいたま市見沼区深作3-12-14"
       }
     },
-    "telFax":{
-      "label":{
-        "en":"TEL/FAX",
-        "jp":"TEL/FAX"
+    "telFax": {
+      "label": {
+        "en": "TEL/FAX",
+        "jp": "TEL/FAX"
       },
-      "value":{
-        "en":"048-687-1033",
-        "jp":"048-687-1033"
+      "value": {
+        "en": "048-687-1033",
+        "jp": "048-687-1033"
       }
     },
-    "businessHours":{
-      "label":{
-        "en":"Business hours",
-        "jp":"営業時間"
+    "businessHours": {
+      "label": {
+        "en": "Business hours",
+        "jp": "営業時間"
       },
-      "value":{
-        "en":"Lunch: 11:00-15:00\nDinner: 17:00-23:00",
-        "jp":"ランチ: 11:00-15:00\nディナー: 17:00-23:00"
+      "value": {
+        "en": "Lunch: 11:00-15:00<br/>Dinner: 17:00-23:00",
+        "jp": "ランチ: 11:00-15:00<br/>ディナー: 17:00-23:00"
       }
     },
-    "closed":{
-      "label":{
-        "en":"Closed",
-        "jp":"定休日"
+    "closed": {
+      "label": {
+        "en": "Closed",
+        "jp": "定休日"
       },
-      "value":{
-        "en":"Every Monday\n* If Monday is a public holiday, closed the following Tuesday\n* If Monday and Tuesday are public holidays, no closed days",
-        "jp":"毎週月曜日\n* 月曜日が祝日の場合は翌火曜日\n* 月曜日と火曜日が祝日の場合は休まず営業"
+      "value": {
+        "en": "Every Monday <br/>* If Monday is a public holiday, closed the following Tuesday<br/>* If Monday and Tuesday are public holidays, no closed days",
+        "jp": "* 毎週月曜日 <br/>* 月曜日が祝日の場合は翌火曜日 <br/>* 月曜日と火曜日が祝日の場合は休まず営業"
       }
     },
-    "parking":{
-      "label":{
-        "en":"Parking",
-        "jp":"駐車場"
+    "parking": {
+      "label": {
+        "en": "Parking",
+        "jp": "駐車場"
       },
-      "value":{
-        "en":"12 spaces in front of the store and along Route 16.",
-        "jp":"店舗前と国道16号沿いに12台分"
+      "value": {
+        "en": "12 spaces in front of the store and along Route 16.",
+        "jp": "店舗前と国道16号沿いに12台分"
       }
     }
-  }
-
+  },
+  "naanImages": [
+    {
+      "image": "/assets/naan/naan1.jpg",
+      "title": "January"
+    },
+    {
+      "image": "/assets/naan/naan1.jpg",
+      "title": "Feb"
+    },
+    {
+      "image": "/assets/naan/naan1.jpg",
+      "title": "march"
+    }
+  ]
 }

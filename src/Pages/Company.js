@@ -5,7 +5,7 @@ const CompanyInformation = () => {
   const { store } = pageData;
   const companyDetails = [
     { label: "会社名", value: store.name["jp"] },
-    { label: "位置", value: store.address["jp"] },
+    { label: "所在地", value: store.address["jp"] },
     { label: "業務内容", value: store.businessContent["jp"] },
     { label: "代表", value: store.representative["jp"] },
     { label: "設立", value: store.dateEstablished["jp"] },

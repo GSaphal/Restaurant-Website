@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import pageData from "../data/content.json";
 import Title from "./title";
 import HorizontalLine from "./line";
+import { Link } from "react-router-dom";
 
 const StoreInfo = () => {
   // Scroll to top whenever the route changes
@@ -17,12 +18,15 @@ const StoreInfo = () => {
       <HorizontalLine />
       <div className="flex flex-col sm:flex-row gap-6 md:gap-8">
         {/* Image Section */}
+
         <div className="w-full sm:w-1/2">
-          <img
-            src={storeInformationItems.image}
-            className="w-full h-auto rounded-2xl"
-            alt="Heaven"
-          />
+          <Link to="/store">
+            <img
+              src={storeInformationItems.image}
+              className="w-full h-auto rounded-2xl"
+              alt="Heaven"
+            />
+          </Link>
         </div>
 
         {/* Map Section */}
@@ -38,9 +42,6 @@ const StoreInfo = () => {
             title="Google Maps"
           ></iframe>
         </div>
-      </div>
-      <div className="flex flex-col text-xl font-bold items-center mt-8">
-        インドカレーヘブン深作店のSNS
       </div>
     </div>
   );

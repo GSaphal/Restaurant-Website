@@ -1,29 +1,36 @@
 import { useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from "react-router-dom";
 import Layout from "./layout";
-import Home from "./Pages/Home";
-import Lunch from "./Pages/Lunch";
-import Drinks from "./Pages/Drinks";
-import Dinner from "./Pages/Dinner";
-import Dessert from "./Pages/Dessert";
-import PartyCourse from "./Pages/PartyCourse";
-import Takeout from "./Pages/Takeout";
-import UberEats from "./Pages/UberEats";
-import CompanyInformation from "./Pages/Company";
-import News from "./Pages/News";
+import Home from "./pages/Home";
+import Lunch from "./pages/Lunch";
+import Drinks from "./pages/Drinks";
+import Dinner from "./pages/Dinner";
+import Dessert from "./pages/Dessert";
+import PartyCourse from "./pages/PartyCourse";
+import Takeout from "./pages/Takeout";
+import UberEats from "./pages/UberEats";
+import News from "./pages/News";
 import { ToastContainer } from "react-toastify";
-import BusinessHours from "./Pages/BusinessHours";
-import ContactForm from "./Pages/ContactForm";
-import ShopInformation from "./Pages/ShopInformation";
+import BusinessHours from "./pages/BusinessHours";
+import ContactForm from "./pages/ContactForm";
+import ShopInformation from "./pages/ShopInformation";
+import NaanInformation from "./pages/NaanInformation";
 
 function App() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
   }, []);
   return (
     <Router>
       <Layout>
         <Routes>
+       
           <Route path="/" element={<Home />} />
           <Route path="/lunch" element={<Lunch />} />
           <Route path="/drinks" element={<Drinks />} />
@@ -34,9 +41,9 @@ function App() {
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/company" element={<BusinessHours />} />
           <Route path="/delivery" element={<UberEats />} />
-          <Route path="/company" element={<CompanyInformation />} />
           <Route path="/news" element={<News />} />
           <Route path="/store" element={<ShopInformation />} />
+          <Route path="/naan" element={<NaanInformation />} />
         </Routes>
         <ToastContainer />
       </Layout>

@@ -8,7 +8,7 @@ import HorizontalLine from "./line";
 const Menu = () => {
   const { menuItems, menu } = pageData.homepage;
   return (
-    <div className="w-full max-w-[1280px] mx-auto pt-[40px] sm:pt-[60px] px-4 sm:px-6 md:px-8">
+    <div className="w-full max-w-[1280px] mx-auto  mt-4 px-4 sm:px-6 md:px-8">
       {/* Title Section */}
       <Title title={menu["jp"]} />
       <HorizontalLine />

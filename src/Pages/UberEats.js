@@ -1,8 +1,10 @@
 import React from "react";
+import BackButton from "../button";
 
 const UberEats = () => {
   return (
-    <>
+    <div className="container">
+      <BackButton/>
       <div className="w-full  sm:my-[40px] flex flex-col md:flex-row items-center gap-10 bg-gray-50 p-6 rounded-lg shadow-md">
         {/* Image Section */}
         <div className="w-full md:w-1/3 flex justify-center">
@@ -57,7 +59,7 @@ const UberEats = () => {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

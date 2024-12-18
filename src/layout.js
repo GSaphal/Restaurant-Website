@@ -1,13 +1,15 @@
-import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
-import GoToDashboardButton from "./Components/GoToDashBoard";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import GoToDashboardButton from "./components/GoToDashBoard";
+import ScrollToTop from "./components/scroll";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="container">
+      <div>
+      <ScrollToTop />
         <Navbar />
-        <>{children}</>
+        {children}
         <GoToDashboardButton />
       </div>
       <Footer />

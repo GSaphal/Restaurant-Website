@@ -1,15 +1,17 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Title from "../Components/title";
-import HorizontalLine from "../Components/line";
+import Title from "../components/title";
+import HorizontalLine from "../components/line";
 import {
+  FaEnvelope,
   FaLocationArrow,
   FaPhone,
   FaRecordVinyl,
   FaStore,
 } from "react-icons/fa";
 import pageData from "../data/content.json";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
+import BackButton from "../button";
 
 const ContactForm = () => {
   const form = useRef();
@@ -69,15 +71,16 @@ const ContactForm = () => {
       })
       .then(
         () => {
-          toast.success("お問い合わせは正常に送信されました")
+          toast.success("お問い合わせは正常に送信されました");
         },
         (error) => {
-          toast.error("懸念事項の送信中にエラーが発生しました。")
+          toast.error("懸念事項の送信中にエラーが発生しました。");
         }
       );
   };
   return (
-    <div className="flex flex-col space-y-4 mb-[20px] p-4">
+    <div className="flex flex-col space-y-4 mb-[20px] p-4 container">
+      <BackButton />
       <div className="flex items-center gap-x-4">
         <Title title="お問い合わせ" />
       </div>
@@ -176,6 +179,9 @@ const ContactForm = () => {
             <div className="text-lg font-semibold mb-2 flex gap-x-3">
               <FaStore size={22} /> {store.name["jp"]}
             </div>
+            <div className="text-md font-semibold mb-2 flex gap-x-3">
+              <FaStore size={22} /> インドカレーヘブン深作店
+            </div>
             <div className="text-md font-normal mb-2 flex gap-x-3">
               <FaRecordVinyl size={22} /> {store.businessNumber["jp"]}
             </div>
@@ -184,7 +190,7 @@ const ContactForm = () => {
               <FaLocationArrow size={22} /> {store.address["jp"]}
             </div>
             <div className="text-md font-normal mb-2 flex gap-x-3">
-              <FaLocationArrow size={22} /> {store.address2["jp"]}
+              <FaEnvelope size={22} /> heavenfukasaku55@gmail.com
             </div>
             <div className="text-md font-normal mb-2 flex gap-x-3">
               <FaPhone size={22} /> {store.telephone["jp"]}

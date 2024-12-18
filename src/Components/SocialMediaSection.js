@@ -17,7 +17,7 @@ const SocialMediaCards = () => {
 
   return (
     <div className="w-full max-w-screen-xl mx-auto my-16 px-6 sm:px-10">
-      <Title title={socials["jp"]} />
+      <Title title="インドカレーヘブン深作店のSNS" />
       <HorizontalLine />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
         {[

@@ -1,6 +1,9 @@
+import BackButton from "../../button";
+
 const InnerMenuPage = ({ title, items, scrollToSection, sectionRefs }) => {
   return (
-    <div className=" max-w-screen-lg w-full mx-auto">
+    <div className=" container px-3 w-full mx-auto">
+      <BackButton/>
       <div className="mb-[20px] md:text-[30px] text-[20px] sm:text-[25px] font-bold py-3">
         {title}
       </div>

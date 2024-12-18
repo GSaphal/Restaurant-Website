@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import pageData from "../data/content.json";
 
 const Navbar = () => {
@@ -58,14 +58,13 @@ const Navbar = () => {
           ))}
         </div>
       </div>
-      <header className="py-[20px] w-full bg-white z-50">
+      <header className="py-[20px] w-full bg-white z-50 container ">
         <div className="w-full flex mx-auto items-center justify-between">
           <div
-            className="text-md sm:text-md md:text-xl font-bold text-primary cursor-pointer"
+            className="text-md sm:text-lg md:text-2xl font-bold text-primary cursor-pointer"
             onClick={handleLogoClick}
           >
-            ヘブン深作店
-            {/* <img src="/logo.png" alt="logo" className="w-full h-16" /> */}
+            インドカレーヘブン深作店
           </div>
 
           <div
@@ -76,6 +75,9 @@ const Navbar = () => {
           </div>
         </div>
       </header>
+     
+ 
+  
     </>
   );
 };
