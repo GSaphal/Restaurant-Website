@@ -66,7 +66,7 @@ const ContactForm = () => {
     }
 
     emailjs
-      .sendForm("service_laznxuu", "template_kgq9cbo", form.current, {
+      .sendForm("service_3g3rlqp", "template_kgq9cbo", form.current, {
         publicKey: "tAzl_CvM2HvMoZcnP",
       })
       .then(

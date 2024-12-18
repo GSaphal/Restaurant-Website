@@ -8,8 +8,8 @@ const NaanInformation = () => {
     <div className="container">
       <BackButton />
       <div className=" max-w-screen-lg w-full mx-auto">
-        <h2 className="text-[22px] font-bold mb-2 text-center mt-5">
-          Naan Information
+        <h2 className="text-[22px] font-bold mb-2 text-center mt-5 text-primary">
+          毎月の月替わりナン
         </h2>
         <div className="flex flex-wrap w-full  flex-row gap-5 justify-center items-center my-10">
           {naanImages.map((image, index) => (
@@ -20,7 +20,7 @@ const NaanInformation = () => {
                 alt="Naan"
                 className="h-96 object-cover rounded-md w-[100%]"
               />
-              <p className="text-lg">{image.title}</p>
+              <p className="text-md font-bold">{image.title}</p>
             </div>
           ))}
         </div>

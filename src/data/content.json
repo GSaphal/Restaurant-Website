@@ -506,16 +506,20 @@
   },
   "naanImages": [
     {
-      "image": "/assets/naan/naan1.jpg",
-      "title": "January"
+      "image": "/assets/naan/naan1.jpeg",
+      "title": "1月"
     },
     {
-      "image": "/assets/naan/naan1.jpg",
-      "title": "Feb"
+      "image": "/assets/naan/naan2.jpeg",
+      "title": "2月"
     },
     {
-      "image": "/assets/naan/naan1.jpg",
-      "title": "march"
+      "image": "/assets/naan/naan3.jpeg",
+      "title": "3月"
+    },
+    {
+      "image": "/assets/naan/naan4.jpeg",
+      "title": "4月"
     }
   ]
 }

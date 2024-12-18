@@ -21,17 +21,17 @@ const Home = () => {
 
       <div className="bg-gradient-to-r from-amber-500 to-pink-500 py-10">
         <div className="min-h-[100px] text-center text-white items-center flex justify-center flex-col py-8">
-          <h1 className="text-4xl font-bold drop-shadow-sm">Our Specials</h1>
-          <p className="text-lg mt-3 px-4">
-            Check our special naan menu, curated by highly best chefs in the
-            world!
+          <h1 className="text-4xl font-bold drop-shadow-sm">月変わりナン</h1>
+          <p className="text-xl mt-3 px-4">
+              毎月の楽しみの月変わりナン
           </p>
           <Link to="/naan">
             <button
               type="submit"
               className="bg-[#f57224] text-white py-2 rounded-md px-5 text-sm font-bold mt-8 border-[1px] border-white flex items-center gap-x-1"
             >
-              Check our Specials <FaAngleRight />
+              クリック
+               <FaAngleRight />
             </button>{" "}
           </Link>
         </div>
