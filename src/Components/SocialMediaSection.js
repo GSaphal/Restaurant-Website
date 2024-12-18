@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
-import pageData from "../data/content.json";
 import Title from "./title";
 import HorizontalLine from "./line";
 
@@ -13,7 +12,6 @@ const SocialMediaCards = () => {
     script.charset = "utf-8";
     document.body.appendChild(script);
   }, []);
-  const { socials } = pageData.homepage;
 
   return (
     <div className="w-full max-w-screen-xl mx-auto my-16 px-6 sm:px-10">

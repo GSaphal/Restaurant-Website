@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import pageData from "../data/content.json";
 
 const Navbar = () => {
