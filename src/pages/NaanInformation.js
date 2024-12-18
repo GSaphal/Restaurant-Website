@@ -18,7 +18,7 @@ const NaanInformation = () => {
                 key={index}
                 src={image.image}
                 alt="Naan"
-                className="h-96 object-cover rounded-md w-[100%]"
+                className="h-96 object-contain rounded-md w-[100%]"
               />
               <p className="text-md font-bold">{image.title}</p>
             </div>
